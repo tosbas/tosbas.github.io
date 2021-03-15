@@ -186,10 +186,6 @@ article h2
 	margin-top: 0;
 }
 
-#Recommandations address
-{
-	text-align: center;
-}
 
 /*bloc section*/
 
@@ -201,8 +197,12 @@ article h2
 
 /*media query*/
 
-@media screen and (min-width: 950px)
+@media screen and (min-width: 1000px)
 {
+	aside
+	{
+		height: auto;
+	}
 
 	#bloc_page
 	{
@@ -224,7 +224,6 @@ article h2
 	img
 	{
 		height: auto;
-		width: auto;
 		width: 50%;
 	}
 
@@ -238,7 +237,7 @@ article h2
 	#bloc_titre
 	{
 		padding-left: 20px;
-		padding-top: 50px;
+		padding-top: 30px;
 		text-align: initial;
 		width: 60%;
 	}
@@ -256,6 +255,7 @@ article h2
 	#bloc_gauche
 	{
 		width: 30%;
+		
 	}
 
 	#bloc_gauche section
@@ -277,18 +277,19 @@ article h2
 
 	#contact
 	{
-		height: 30%;
+		height: auto;
 	}
 
 	#info
 	{
 		line-height: 1.8em;
-		height: 60%;
+		height: auto;
 	}
 
 	#loisirs
 	{
-		height: 10%;
+		padding-bottom: 20px;
+		padding-top: 100px;
 	}
 
 	#loisirs h2
@@ -306,13 +307,15 @@ article h2
 		width: 60%;
 		padding-left: 20px;
 	}
-
-	#Recommandations address
+	.details
 	{
-		display: flex;
-		justify-content: space-between;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding: 0;
+		padding-top: 5px;
+	}
+	.fa-graduation-cap, .fa-suitcase, .fa-pen
+	{
+		padding: 0;
+		padding-right: 10px;
 	}
 
 }
